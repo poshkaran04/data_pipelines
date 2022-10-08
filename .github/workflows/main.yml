@@ -32,7 +32,7 @@ jobs:
           context: .
           # Note: tags has to be all lower-case
           tags: |
-            ghcr.io/poshkaran04/ipipeline_ga:latest
+            ghcr.io/poshkaran04/ipipeline:latest
 
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
