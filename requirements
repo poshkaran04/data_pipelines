@@ -1,0 +1,3 @@
+pyodbc==4.0.30
+pandas
+load_dotenv
