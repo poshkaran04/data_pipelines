@@ -19,7 +19,8 @@ RUN pip3 install --upgrade pip
 COPY requirements requirements
 RUN pip3 install -r requirements
 
-COPY person.csv person.csv
-COPY etl_csv_mssql.py etl_csv_mssql.py
+COPY /src /src
+
+WORKDIR /src
 
 ENTRYPOINT ["python","etl_csv_mssql.py"]
